@@ -20,7 +20,7 @@ jobs:
         uses: actions/checkout@v4.2.2   # downloads your repo onto the runner
 
       - name: Setup Node.js
-        ses: actions/setup-node@v4.4.0  # installs Node.js (no manual install needed)
+        uses: actions/setup-node@v4.4.0  # installs Node.js (no manual install needed)
         with:
           node-version: '24'
           cache: 'npm'               # caches node_modules between runs = faster
